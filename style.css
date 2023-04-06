@@ -1,0 +1,203 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url(/img/Wireframe\ -\ 1.png);
+	height: 100%;
+}
+
+#icon img {
+	position: relative;
+	top: 50px;
+	left: 10px;
+	height: 35px;
+	cursor: pointer;
+	opacity: 0.5;
+	transition: opacity 0.5s;
+}
+
+#icon img:hover {
+	opacity: 1;
+}
+
+#history {
+	z-index: 9;
+	position: fixed;
+	left: 0;
+	top: 41px;
+	height: 93.3%;
+	width: 0%;
+	transition: width 0.5s;
+	visibility: hidden;
+	background-color: #171616;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+#history img {
+	position: relative;
+	top: 12px;
+	left: 12px;
+	height: 30px;
+	cursor: pointer;
+	opacity: 0.5;
+	display: none;
+	transition: opacity 0.5s;
+}
+
+#history img:hover {
+	opacity: 1;
+}
+
+#history h1 {
+	color: white;
+	margin-top: 20px;
+	text-align: center;
+	margin-bottom: 20px;
+	font: bold 2em "Segoe UI";
+}
+
+#history hr {
+	width: 220px;
+	margin: auto;
+	color: #ff003d;
+	margin-bottom: 15px;
+}
+
+.content {
+	margin-top: 5px;
+	padding: 10px;
+	width: 100%;
+	text-align: left;
+}
+
+.content:hover {
+	background-color: #151414;
+}
+
+.content span {
+	padding: 5px;
+	width: 20px;
+	color: white;
+	font: normal 1.2em "Segoe UI";
+}
+
+.content p {
+	padding: 5px;
+	color: white;
+	font: bold 1.6em "Segoe UI";
+}
+
+#calc {
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -60%);
+	display: flex;
+	max-width: 400px;
+	justify-content: center;
+	flex-direction: column;
+}
+
+#output {
+	background-image: linear-gradient(200deg, #111111, #252525);
+	flex-direction: column;
+	display: flex;
+	width: 100%;
+	text-align: end;
+	background-color: rgb(123, 133, 141);
+	padding: 10px;
+	justify-content: center;
+}
+
+#previuos {
+	overflow-y: hidden;
+	height: 5vh;
+	justify-content: center;
+	color: white;
+	padding: 5px;
+	font: normal 1.2em "Segoe UI";
+}
+
+#display {
+	position: relative;
+	top: 10px;
+	overflow-y: hidden;
+	color: white;
+	padding: 5px;
+	font: bold 2.3em "Segoe UI";
+	height: 10vh;
+}
+
+#keys {
+	background-color: rgb(123, 133, 141);
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	grid-template-rows: auto auto auto auto auto auto;
+	grid-column: 1 / span 1;
+	height: 60vh;
+	width: 100%;
+}
+
+button {
+	background-color: #1e1e1e;
+	outline: none;
+	color: white;
+	border: none;
+	font: bold 1em "Segoe UI";
+	width: 100px;
+}
+
+button:hover {
+	background-color: #212121;
+}
+
+button:active {
+	background-color: #ff003d;
+}
+
+[data-clear-all] {
+	background-color: #ff003d;
+}
+
+[data-clear-all]:hover {
+	background-color: #ff0e46;
+}
+
+#egual {
+	background-color: #ff003d;
+	width: 100px;
+}
+
+#egual:hover {
+	background-color: #ff0e46;
+}
+
+footer {
+	display: flex;
+	padding: 10px;
+	height: 20px;
+	justify-content: center;
+	max-width: 700px;
+	text-align: center;
+	margin: auto;
+}
+
+footer p {
+	line-height: 23px !important;
+	font: normal 0.8em sans-serif;
+	color: white;
+}
+
+footer  a {
+	font: normal 1em sans-serif;
+	color: #ff003d;
+	text-decoration: none;
+}
+
+footer a:hover{
+	color: #ba002b
+}
